@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SayNSnap</title>
+         
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+            
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+        
+        <script src="js/jquery-1.9.1.min.js"></script>
+        
+        <script src="js/jquery.mobile-1.4.2.min.js"></script>
+
+  </head>
+  <body>
+    <div data-role="page" id='login-page'>
+        <div data-role="none" class="container-fluid">
+        	<div  class="row">
+        		<div class="col-xs-12">
+        			<img class="logo" src="images/logo.png" alt="logo">
+        		</div><!-- col-xs-12 -->
+        	</div><!-- row -->
+        	<div data-role="none"  class="row">
+        		<div  class="col-xs-12">
+        			<form data-role="none" class="login-form" role="form" id="loginForm" >
+        				<input data-role="none" class="email-input" type="text" placeholder="Username or Email" id="username">
+        				<input data-role="none" class="pass-input" type="password" placeholder="password" id="password">
+        				<button data-role="none" id="submit" class="login-btn btn">Login</button>
+        				<div class="forgot-pass">
+        					<a  data-role="none" href="forgot-password.html">Forgot password</a>
+        				</div>
+        			</form>
+        		</div><!-- col-xs-12 -->
+                
+        	</div><!-- row -->
+        	
+            <div data-fullscreen="true" data-tap-toggle="false" data-transition="fade" data-role='footer' data-position="fixed" class="ui-bar-b" data-theme="g">
+                <div data-role="navbar">
+                    <ul>
+                        <li><button data-role="none" class="btn register-btn register-bottom">Register for free</button>
+                        </li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+        </div><!-- container -->
+	</div>
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>

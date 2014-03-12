@@ -1,0 +1,81 @@
+/* main style for saynsnap application */
+
+
+/* global */
+
+.container-fluid {
+	padding: 0;
+}
+body {
+	font-family: "Myriad Pro",Helvetica Neue,Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+}
+input[type="text"], input[type="password"] {
+	font-size: 12px;
+	color: #555555;
+}
+.logo{
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+.login-form {
+	padding: 0 17px;
+}
+.login-form input[type="text"], .login-form input[type="password"] {
+	width: 100%;
+	margin-bottom: 22px;
+}
+.email-input {
+	background: url(../images/user-icon.png) left center no-repeat transparent;
+	padding-left: 75px;
+	border: 1px solid #cecece;
+	height: 48px;
+}
+.pass-input {
+	background: url(../images/password-icon.png) left center no-repeat transparent;
+	padding-left: 75px;
+	border: 1px solid #cecece;
+	height: 48px;
+}
+.btn {
+	color: #fff;
+}
+.login-btn {
+	width: 100%;
+	height: 43px;
+	background: #2a9560;
+	font-size: 15px;
+}
+.forgot-pass {
+	font-size: 13px;
+	text-decoration: underline;
+	text-align: center;
+	margin-top: 18px;
+}
+.forgot-pass a {
+	color: #bc3528;
+}
+
+.forgot-pass{
+    padding-bottom:100px;
+}
+
+.register-btn {
+	background: #d2322d;
+	height: 57px;
+	font-size: 15px;
+	border-radius: 0;
+}
+.register-bottom {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.register-bottom .register-btn {
+	margin: 0;
+}
+
+
+

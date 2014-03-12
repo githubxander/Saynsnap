@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html> 
+<head></head>
+<body>
+    
+    <div class="container" data-role="page" id='home-page'>
+        <div  data-theme="a" data-tap-toggle="false" data-transition="fade" data-fullscreen="true" data-role="header" data-position="fixed" class="ui-bar-b">
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a data-icon="home" href="home.html"></a></li>
+                    <li><a data-icon="star" href="collection.html"></a></li>
+                    <li><a data-icon="gear" class='logout' ></a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+        
+        <div class="container" data-role="none">
+                
+            <div class="col-xs-12 col-sm-9" >
+              <div class="jumbotron">
+                <h1>Homepage!</h1>
+                <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+              </div>
+              <div class="row">
+                <div class="media">
+                  <a class="pull-left" href="#">
+                    <img id="picture" data-src="holder.js/300x200" alt="300x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MzAweDIwMDwvdGV4dD48L3N2Zz4=" style="width: 300px; height: 200px;">
+                  </a>
+                  <div class="media-body">
+                    <p>Name : <span id="name">Name</span></p>
+                    <p>Address : <span id="address">Address</span></p>
+                    <p>About Me : <span id="aboutme">About Me</span></p>
+                  </div>
+                </div>
+              </div><!--/row-->
+            </div><!--/span-->
+                    
+        </div><!--/row-->
+    
+        <div data-fullscreen="true" data-tap-toggle="false" data-transition="fade" data-role="footer" data-position="fixed" class="ui-bar-b" data-theme="a">
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li><a data-icon="search" href="home.html"></a></li>
+                        <li><a data-icon="grid" href="collection.html"></a></li>
+                        <li><a data-icon="info"  ></a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        </div><!-- /footer -->
+    </div><!-- /.container -->
+  </body>
+</html>

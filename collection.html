@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html> 
+<head></head>
+<body>
+    
+    <div class="container" data-role="page" id='collection-page'>
+    
+    <div data-back-btn-theme="g" data-theme="m" data-transition="fade" data-fullscreen="true" data-role="header" data-position="fixed" class="ui-bar-b">
+        <div data-role="navbar" data-iconpos="bottom">
+            <ul>
+                <li><a data-icon="home" href="home.html"></a></li>
+                <li><a data-icon="star" href="collection.html"></a></li>
+                <li><a data-icon="gear" class='logout' ></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+
+        <div class="container" data-role="none">
+            <form id="formCollection" >
+              <div class="form-group">
+                <label for="inputPost" class="col-sm-2 control-label">Post</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" id="inputPost" placeholder="Post" rows="3"></textarea>
+                </div>
+              </div>
+          
+              <div class="form-group">
+                <label for="inputHashtags" class="col-sm-2 control-label">Hashtags</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputHashtags" placeholder="Hashtags">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="inputTagsomeone" class="col-sm-2 control-label">Tagsomeone</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputTagsomeone" placeholder="Tagsomeone">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="inputAuthor" class="col-sm-2 control-label">Author</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputAuthor" placeholder="Author">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button id="submitPost" class="btn btn-default">Submit</button>
+                </div>
+              </div>
+            </form>
+        </div><!--/row-->
+        <p></p>
+        <div id="image-holder" class="bs-example bs-example-images">            
+        </div>
+        
+        <div data-fullscreen="true" data-transition="fade" data-role="footer" data-position="fixed" class="ui-bar-b" data-theme="a">                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li><a data-icon="search" href="home.html"></a></li>
+                        <li><a data-icon="grid" href="collection.html"></a></li>
+                        <li><a data-icon="info"  ></a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        </div><!-- /footer -->
+
+
+    </div><!-- /.container -->
+
+  </body>
+  <script type="text/javascript" src="js/jquery.validate.js"></script>
+</html>
