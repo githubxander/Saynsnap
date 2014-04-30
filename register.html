@@ -2,7 +2,7 @@
 <html lang="en">
 <head></head>
   <body>
-    <div data-role="page" id='forgot-password-page'>
+    <div data-role="page" id='register-page'>
         <div data-role="none" class="container-fluid">
         	<div  class="row">
         		<div class="col-xs-12">
@@ -11,13 +11,17 @@
         	</div><!-- row -->
         	<div data-role="none"  class="row">
         		<div  class="col-xs-12">
-        			<form data-role="none" class="login-form" role="form" id="frmForgotPass" >
+        			<form data-role="none" class="login-form" role="form" id="frmRegister" >
+                        <input data-role="none" class="required text-input" type="text" placeholder="Username" id="username" name="username">
+                        <input data-role="none" class="required text-input" type="text" placeholder="First name" id="firstname" name="firstname">
+                        <input data-role="none" class="required text-input" type="text" placeholder="Last name" id="lastname" name="lastname">
                         <input data-role="none" class="required email text-input" type="text" placeholder="Email Address" id="email" name="email">
-                        <button data-role="none"  type="submit" class="login-btn btn">Recover Account</button>
+                        <input data-role="none" class="required text-input" type="password"  placeholder="Password" id="newpassword" name="password">
+                        <input data-role="none" class="required text-input" type="password" equalTo="#newpassword" id="repassword" placeholder="Comfirm password"  name="repassword">
+        				<button data-role="none" id="submitRegister"  type="submit" class="login-btn btn">Sign Up</button>
         			</form>
         		</div><!-- col-xs-12 -->
         	</div><!-- row -->
-            
         	<div data-fullscreen="true" data-tap-toggle="false" data-transition="fade" data-role='footer' data-position="fixed" class="ui-bar-b" data-theme="g">
 				<a href="index.html" data-role="none" class="btn register-btn register-bottom">Login</a>
                 <div data-role="navbar" data-iconpos="bottom">

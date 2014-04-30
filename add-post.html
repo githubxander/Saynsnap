@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html> 
+<head></head>
+<body>
+    <div class="container" data-role="page" id='add-post-page'>
+		<div data-tap-toggle="false" data-back-btn-theme="g" data-theme="m" data-transition="fade" data-fullscreen="true" data-role="header" data-position="fixed" class="ui-bar-b" id="header">
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul class="nav">
+					<li class="home"><a data-role="none" href="home.html"><span class="icon"></span></a></li>
+					<li class="tagged"><a data-role="none" href="notification.html"><span class="icon"></span></a></li>
+					<!--<li class="trending"><a data-role="none" href="trending.html"><span class="icon"></span></a></li>-->
+					<li class="profile"><a data-role="none" href="profile.html"><span class="icon"></span></a></li>
+				</ul>
+			</div><!-- /navbar -->
+			
+		</div>
+		
+		<div id="main-cont">
+			<div data-role="none" class="row">
+				<div class="col-xs-12">
+					<div class="post-hldr">
+						<form data-role="none" class="login-form" role="form" id="frmAddPost" >
+                            <textarea data-role="none" class="required text-input col-xs-12" id="content" placeholder="Post"  name="content"></textarea>
+                            <input data-role="none"  type="text" class="required text-input" id="hashtag" placeholder="Hashtags" name="hashtag" />
+                            <input data-role="none"  type="text" class="text-input" id="tagfriend" placeholder="Tagsomeone" name="tagfriend" />
+                            <input data-role="none"  type="text" class="text-input" id="author" placeholder="Author" name="author" />
+                            <button data-role="none" id="submitPost"  type="submit" class="login-btn btn">Submit</button>
+                        </form>
+					</div><!-- post-hldr -->
+				</div><!-- col-xs-12 -->
+			</div><!--/row-->
+		</div><!-- main-cont -->
+        
+        <div data-tap-toggle="false" data-fullscreen="true" data-transition="fade" data-role="footer" data-position="fixed" class="ui-bar-b" data-theme="a" id="footer">                
+				<div data-role="navbar" data-iconpos="bottom">
+                    <ul class="nav">
+                        <li class="search"><a data-role="none" href="#"><span class="icon"></span></a></li>
+                        <li class="addpost"><a data-role="none" href="#"><span class="icon"></span></a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        </div><!-- /footer -->
+
+
+    </div><!-- /.container -->
+
+  </body>
+</html>
+        

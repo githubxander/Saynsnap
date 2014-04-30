@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+</head>
+<body>
+    
+    <div  class="container" data-role="page" id='comment-page'">
+		
+        
+		<div role="main" class="row">
+			<div class="col-xs-12">
+				<div class="post-hldr">
+					<div id="cat-post-container">
+                    	<div id="wrapper">
+                            <div id="container view-post-hldr-mod">
+                                <div class="item comment-item" >
+                                    <div data-role="header"  role="banner" >
+                                    <a href="#" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back" >Close</a>
+                            		<h1 class="ui-title" role="heading" aria-level="1">Comment</h1>
+                            		</div>
+                                    <div class="details-hldr">
+                                        <div class="profile-holder">
+                                            <div class="pic" style="background-image: url('images/unknown.png');">
+                                        </div>
+                                        </div>
+                                        <ul>
+                                            <li><a class="username-holder" href=""></a></li>
+                                            <li><p class="time">8 days ago</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post">
+                                    <img class="image-holder" src="images/default.jpg" alt="post">
+                                    <div class="comment-sec">
+                                        <h1 class="comment-hdr">Post comments</h1>
+                                        <form id="comment-frm" action="/post/view/845" method="post">
+                                            <textarea class="form-control comment-txtarea" name="content" placeholder="Post your comment here" required=""></textarea>
+                                            <h2 class="comment-counter">0 comment</h2>
+                                            <div class="right-btn-hldr comment-btn-hldr">
+                                                <button data-role="none" id="submitComment" class="comment-btn btn">Comment</button>
+                                            </div>
+                                        </form>
+                                        
+                                        <div class="comment-sec-hldr">
+                                            <ul class="comment-lst-hldr comment-list"></ul>
+                                        </div>
+                                     </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div><!-- cat-post -->
+				</div><!-- post-hldr -->
+			</div><!-- col-xs-12 -->
+		</div><!--/row-->
+    </div><!-- /.container --> 
+  </body>
+</html>

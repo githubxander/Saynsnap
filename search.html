@@ -1,13 +1,12 @@
 <!DOCTYPE html> 
-<html>
+<html> 
 <head>
-
 </head>
 <body>
     
-    <div class="container" data-role="page" id='home-page'>
+    <div class="container" data-role="page" id='search-page'>
     
-		<div data-tap-toggle="false" data-back-btn-theme="g" data-theme="m" data-transition="fade" data-fullscreen="true" data-role="header" data-position="fixed" class="ui-bar-b" id="header">
+		<div data-tap-toggle="false" data-back-btn-theme="g" data-theme="m" data-transition="fade" data-fullscreen="true" data-role="header" data-position="fixed" id="header">
 			<div data-role="navbar" data-iconpos="bottom">
 				<ul class="nav">
 					<li class="home"><a data-role="none" href="home.html"><span class="icon"></span></a></li>
@@ -21,17 +20,18 @@
         <div id="main-cont">
 			<div data-role="none" class="row">
 				<div class="col-xs-12">
+					<div class="profile-hldr">
+						<div class="media-body">
+							<form data-role="none" class="login-form" role="form" id="frmSearch">
+                                <input type="search" placeholder="Type keywords..." name="search" id="search-basic" value="" />
+                            </form>
+                        </div><!-- user-prof-img -->
+					</div><!-- profile-hldr -->
 					<div class="post-hldr">
 						<div class="clearfix"></div>
 						<div id="cat-post-container">
                         	<div id="wrapper">
-                                <div id="container">
-                                </div>
-                                
-                                <div id="loading">
-                                    <span class="loading-icon"></span>
-                                    <a href="#" page-num="2" id="loadmore" >Load more items</a>
-                                </div>
+                                <div id="container-search"></div>
                             </div>
 						</div><!-- cat-post -->
 						<div class="clear"></div>
@@ -49,6 +49,6 @@
                 </ul>
             </div><!-- /navbar -->
         </div><!-- /footer -->
-    </div><!-- /.container -->  
+    </div><!-- /.container -->
   </body>
 </html>

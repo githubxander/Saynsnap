@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    
+    <div class="container" data-role="page" id='profile-page'>
+    
+		<div data-tap-toggle="false" data-back-btn-theme="g" data-theme="m" data-transition="fade" data-fullscreen="true" data-role="header" data-position="fixed" class="ui-bar-b" id="header">
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul class="nav">
+					<li class="home"><a data-role="none" href="home.html"><span class="icon"></span></a></li>
+					<li class="tagged"><a data-role="none" href="notification.html"><span class="icon"></span></a></li>
+					<!--<li class="trending"><a data-role="none" href="trending.html"><span class="icon"></span></a></li>-->
+					<li class="profile"><a data-role="none" href="profile.html"><span class="icon"></span></a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+        
+        <div id="main-cont">
+			<div data-role="none" class="row">
+				<div class="col-xs-12">
+					<div class="profile-hldr">
+						<div class="media-body">
+							<div class="user-prof-img">
+								<img id="profile-pic"  alt="profile image" style="width: 82px; height: 83px;" />
+							</div><!-- user-profile -->
+                            <p><span id="name">&nbsp;</span></p>
+                            <p><span id="date-joined">Joined about 3 months ago</span></p>
+                            <p><span id="status">&nbsp;</span></p>
+                            <p><span id="date-joined"><a class="logout" href="#">Logout</a></span></p>
+						</div><!-- user-prof-img -->
+					</div><!-- profile-hldr -->
+					<div class="post-hldr">
+						<ul class="cat-nav">
+							<li><a data-role="none" id="collection" href="#">Collection</a></li>
+							<li><a data-role="none" id="following" href="#">Following <span class="following-count"></span></a></li>
+							<li><a data-role="none" id="followers" href="#">Followers <span class="followers-count"></span></a></li>
+							<li><a data-role="none" id="tagged" href="#">Tagged <span class="tagged-count"></span></a></li>
+							<li><a data-role="none" id="liked" href="#">Liked <span class="liked-count"></span></a></li>
+						</ul><!-- cat-nav -->
+						<div class="clearfix"></div>
+						<div id="cat-post-container">
+                        	<div id="wrapper">
+                                <div id="list">
+                                    <div id="collection-tab"></div>
+                                    
+                                    <div id="following-tab"></div>
+                                    
+                                    <div id="followers-tab"></div>
+                                        
+                                    <div id="tagged-tab"></div>
+                                    
+                                    <div id="liked-tab"></div>
+                                </div>
+                            </div>
+						</div><!-- cat-post -->
+						<div class="clear"></div>
+					</div><!-- post-hldr -->
+				</div><!-- col-xs-12 -->
+			</div><!--/row-->
+		</div><!-- main-cont -->
+        
+        <div data-tap-toggle="false" data-fullscreen="true" data-transition="fade" data-role="footer" data-position="fixed" class="ui-bar-b" data-theme="a" id="footer">                
+			<div data-role="navbar" data-iconpos="bottom">
+                <ul class="nav">
+                    <li class="search"><a href="search.html"><span class="search-btn icon"></span></a></li>
+                    <li class="addpost"><a data-role="none" href="add-post.html"><span class="icon"></span></a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+       
+    </div><!-- /.container -->
+  </body>
+</html>

@@ -1,0 +1,370 @@
+/* main style for saynsnap application */
+
+
+/* global */
+
+.text-input {
+	padding-left: 10px;
+	border: 1px solid #cecece;
+	height: 48px;
+}
+
+.clear-sp{
+    clear:both; 
+    padding-bottom:35px;
+}
+
+.login-form .pass-input, 
+.login-form .email-input {
+	margin-top: 22px;
+	margin-bottom: 0px;
+	position: relative;
+	z-index: 1;
+	outline: 0;
+}
+
+.row-input-email, 
+.row-input-password {
+	position: relative;
+	z-index: 100;
+}
+
+.row-input-email:before,
+.row-input-password:before {
+	background-image: url(../images/icon-sprite.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	position: absolute;
+	content: "";
+	z-index: 10;
+	width: 37px;
+	height: 70px;
+}
+
+.row-input-email:before {
+	background-position: -100px -28px;
+}
+
+.row-input-password:before {
+	background-position: -150px -28px;
+}
+
+form button{
+    margin-top: 25px !important;
+}
+
+/* VALIDATION STYLE */
+label.error {
+		color: rgb(255, 97, 97);
+		font-size: 13px;
+		font-weight: normal;
+		line-height: 1.4;
+		/*margin-top: 0.5em;*/
+		width: 100%;
+		float: none;
+}
+
+@media screen and (orientation: portrait){
+		label.error { margin-left: 0; display: block; }
+}
+
+@media screen and (orientation: landscape){
+		label.error { display: inline-block; }
+}
+
+em { color: red; font-weight: bold; padding-right: .25em; }
+
+#frmAddPost #content {
+    /*position:absolute;*/
+    /*top:40px;*/
+    margin-top:50px;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+#content div div.photo-body {width: 100%; height: 100%; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;}
+
+.post-img{
+    position: relative; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px
+}
+
+
+/* Responsive Images */
+.image-holder{
+    background-color: bisque;
+}
+
+#div1{
+    text-align: center !important;
+}
+
+
+.search-content{
+    padding:5px;
+    display: none;
+    background-color: #2a9560;
+    
+    list-style: none;
+    margin: 0;
+    position: relative;
+    border: 0;
+    max-width: 100%;
+    overflow: visible;  
+}
+
+#following-tab, #followers-tab, #tagged-tab, #liked-tab {
+    display:none;
+}
+
+#list{
+    padding-bottom: 80px;
+}
+
+#loading{
+    text-align: center; 
+    padding-top: 20px;
+}
+#loading a{
+    border: 1px solid #777777;
+    bottom: 0;
+    color: #777777;
+    text-decoration: none;
+    padding: 6px 59px;
+}
+
+.loading-icon{
+	background-image: url('../images/ajax-inside-loader.gif');
+	background-repeat: none;
+	background-color: transparent;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    height:17px;
+    width:17px;
+}
+
+/* Serch Field */
+#frmSearch input[type="text"]{
+    margin: 0px !important;
+    min-height: 4.2em !important;
+}
+
+/* Comment Field */
+.comment-hdr {
+font-size: 16px;
+margin: 0px !important;
+}
+
+.comment-sec {
+width: 100%;
+background: #fefefe;
+float: left;
+padding: 10px;
+border: 1px solid #DDDDDD;
+box-shadow: 0 0 3px 0 #CCCCCC;
+}
+
+.comment-frm {
+border-bottom: 1px solid #ccc;
+padding: 10px 0;
+width: 100%;
+float: left;
+}
+
+.comment-counter {
+font-size: 16px;
+padding: 20px 0;
+float: left;
+}
+
+.comment-btn-hldr {
+padding: 20px 0;
+}
+
+.right-btn-hldr {
+float: right;
+font-size: 13px;
+font-weight: normal;
+}
+
+.view-post-hldr-mod {
+width: 610px;
+border: 5px solid rgba(0,0,0,0.25);
+margin: 0 auto;
+margin-bottom: 36px;
+}
+
+.details-hldr {
+width: 100%;
+float: left;
+padding: 20px 10px;
+background: #fefefe;
+}
+
+.view-post-hldr-mod {
+width: 610px;
+border: 5px solid rgba(0,0,0,0.25);
+margin: 0 auto;
+margin-bottom: 36px;
+}
+
+.details-hldr .pic, .user-comment-hldr .pic {
+float: left;
+margin-right: 15px;
+width: 78px;
+height: 78px;
+background-position: center;
+background-repeat: no-repeat;
+overflow: hidden;
+background-size: cover;
+}
+
+.details-hldr ol, .details-hldr ul {
+list-style: none;
+}
+.details-hldr a, .details-hldr a:hover {
+color: #BC372A;
+text-decoration: none;
+}
+
+.details-hldr > ul li {
+line-height: 2em;
+}
+
+p.time {
+font-size: 12px;
+font-style: italic;
+font-weight: normal;
+margin-top: 2px;
+color: #7c7c7c;
+}
+
+.comment-item {
+    float: left;
+    margin-bottom: 0.2em !important;
+}
+
+.comment-sec-hldr {
+width: 100%;
+float: left;
+margin-top: 10px;
+background: #F1F1F1;
+}
+
+ul.comment-lst-hldr {
+width: 100%;
+display: block;
+float: left;
+padding: 2px;
+margin: 0px;
+}
+
+.user-comment-details ul {
+    padding: 0px;
+}
+
+.comment-lst-hldr li {
+display: block;
+padding: 10px;
+float: left;
+width: 100%;
+}
+
+.user-comment-hldr {
+float: left;
+width: 100%;
+padding: 10px;
+background: none repeat scroll 0 0 #DFDFDF;
+border-radius: 5px;
+}
+
+.user-comment-hldr #comment-remove-btn {
+float: right;
+}
+
+
+.pic img, .user-comment-details {
+float: left;
+}
+
+li.date {
+color: #a4a4a4;
+padding-bottom: 20px;
+}
+
+li.comment-txt {
+font-size: 14px;
+}
+.user-comment-details li {
+padding: 0 0 5px 10px;
+}
+.comment-lst-hldr li {
+display: block;
+padding: 3px;
+float: left;
+width: 100%;
+}
+
+li.name a, li.name a:hover {
+color: #BC372A;
+font-weight: bold;
+vertical-align: middle;
+}
+
+
+
+
+.user-comment-details {
+	width: 60%;
+}
+
+.noti-details {
+	border-bottom: 1px #ebebeb solid;
+	padding: 12px;
+}
+
+.noti-message {
+	margin-left: 24px;
+}
+
+.noti-details img {
+	float: left;
+	margin-right: 8px;
+	margin-top: 4px;
+}
+
+.notif-other-title {
+	padding: 10px;
+	background-color: #eff2f4;
+	color: #767676;
+	font-weight: bold;
+	border-bottom: 1px solid #bebebe;
+}
+
+.noti-other-container ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.noti-other-container ul li {
+	padding: 10px;
+	border-bottom: 1px solid #bebebe;
+}
+
+.other-name {
+	line-height: 55px;
+}
+
+.img-cont {
+	width: 55px;
+	height: 55px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+	margin-right: 10px;
+}
+
